@@ -1,0 +1,57 @@
+[color]
+  diff = auto
+  branch = auto
+  status = auto
+  ui = auto
+[user]
+  name = dennyabraham
+  email = dennyabraham@users.noreply.github.com
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  select = cherry-pick
+  br = branch
+  praise = blame
+  hide = update-index --assume-unchanged
+  unhide = update-index --no-assume-unchanged
+  char-diff = diff --word-diff-regex=.
+  char-diff-color = diff --word-diff-regex=. --word-diff=color
+  undo = reset --soft HEAD^
+  count = shortlog -sn
+  lol = log --graph --pretty=oneline --decorate
+  clear-merge = merge --no-ff --log --edit
+  amend-content = commit --amend --no-edit
+  wip = commit -a -m wip
+[include]
+  path = ~/.config/git/config
+  path = ~/.config/git/secret-config
+[fetch]
+  prune = true
+[push]
+  default = upstream
+[rerere]
+  enabled = 1
+[commit]
+  template = ~/.gitmessage
+[core]
+  editor = nvim
+  autocrlf = input
+  pager = less -F -X
+  excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes
+[init]
+  templatedir = ~/.gittemplate
+[rebase]
+  autostash = true
+[homebrew]
+  analyticsdisabled = true
+[diff]
+  tool = nvimdiff
+[diff "clojure"]
+  xfuncname = (^\\(.*|\\s*\\(defn.*)
+[merge]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
+  prompt = true

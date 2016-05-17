@@ -1,0 +1,15 @@
+# Make Tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# List all matches in case multiple possible completions are possible
+set show-all-if-ambiguous on
+
+set complete enhance
+
+# Edit commands in Vi mode
+# set editing-mode vi
+# set keymap vi
+
+# Edit commands in emacs mode
+set editing-mode emacs
+set keymap emacs
