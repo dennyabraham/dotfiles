@@ -13,4 +13,6 @@ if [ "$DOTFILE_UPDATE" = "force" ]; then
   echo '    protocol: https'
   echo '* setup a bundler gem configconfig in ~/.bundle/config'
   echo '  bundle config <BUNDLE_HOST> <USERNAME>:<PASSWORD>'
+  echo '* add HOMEBREW_GITHUB_API_TOKEN to ~/.config/zsh/secrets.sh'
+  echo '  export HOMEBREW_GITHUB_API_TOKEN=0000000000000000000000000000000000000000'
 fi
