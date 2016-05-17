@@ -64,7 +64,6 @@ plugins=(z)
 source $HOME/.config/zsh/arch.sh
 
 source $HOME/.config/zsh/vars.sh
-source $HOME/.config/zsh/vars.sh
 source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/paths.sh
