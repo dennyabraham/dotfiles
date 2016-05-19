@@ -55,3 +55,5 @@
 [difftool "nvimdiff"]
   cmd = "nvim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
   prompt = true
+[difftool]
+  prompt = false
