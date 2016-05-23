@@ -33,15 +33,15 @@
 [rerere]
   enabled = 1
 [commit]
-  template = ~/.gitmessage
+  template = ~/.config/git/commit-template
 [core]
   editor = nvim
   autocrlf = input
   pager = less -F -X
-  excludesfile = ~/.gitignore_global
-  attributesfile = ~/.gitattributes
+  excludesfile = ~/.config/git/gitignore
+  attributesfile = ~/.config/git/attributes
 [init]
-  templatedir = ~/.gittemplate
+  templatedir = ~/.config/git/template
 [rebase]
   autostash = true
 [homebrew]
