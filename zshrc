@@ -65,16 +65,16 @@ source $HOME/.config/zsh/arch.sh
 
 source $HOME/.config/zsh/vars.sh
 source $HOME/.config/zsh/chruby.sh
+source $HOME/.config/zsh/aliases.sh
+source $HOME/.config/zsh/paths.sh
+source $HOME/.config/zsh/secrets.sh
+source $ZSH/oh-my-zsh.sh
 
 # FIXME - use chpwd to check for a rvmrc file, then activate if nvm isn't
 # already active.  alternately, use a node version manager that's faster
 if [ -e "$PWD/.nvmrc" ]; then
   source $HOME/.config/zsh/nvm.sh
 fi
-source $HOME/.config/zsh/aliases.sh
-source $HOME/.config/zsh/paths.sh
-source $HOME/.config/zsh/secrets.sh
-source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
