@@ -94,13 +94,6 @@ CodeRay.scan("example", :ruby).term # just to load necessary files
 
 $LOAD_PATH << File.dirname(File.realpath(__FILE__))
 
-# In CodeRay >= 1.1.0 token colors are defined as pre-escaped ANSI codes
-if Gem::Version.new(CodeRay::VERSION) >= Gem::Version.new('1.1.0')
-  require "escaped_colors"
-else
-  require "unescaped_colors"
-end
-
 module CodeRay
   module Encoders
     class Terminal < Encoder
