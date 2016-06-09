@@ -93,14 +93,3 @@ CodeRay.scan("example", :ruby).term # just to load necessary files
 # Token colors pulled from: https://github.com/rubychan/coderay/blob/master/lib/coderay/encoders/terminal.rb
 
 $LOAD_PATH << File.dirname(File.realpath(__FILE__))
-
-module CodeRay
-  module Encoders
-    class Terminal < Encoder
-      # override old colors
-      TERM_TOKEN_COLORS.each_pair do |key, value|
-        TOKEN_COLORS[key] = value
-      end
-    end
-  end
-end
