@@ -40,6 +40,7 @@
   pager = less -F -X
   excludesfile = ~/.config/git/gitignore
   attributesfile = ~/.config/git/attributes
+  ;hooksPath # sets a hooks path
 [init]
   templatedir = ~/.config/git/template
 [rebase]
@@ -48,6 +49,7 @@
   analyticsdisabled = true
 [diff]
   tool = nvimdiff
+  ;compactionHeuristic # enables breaking diffs optimistically at whitespace boundaries
 [diff "clojure"]
   xfuncname = (^\\(.*|\\s*\\(defn.*)
 [merge]
@@ -57,3 +59,11 @@
   prompt = true
 [difftool]
   prompt = false
+[submodule]
+	fetchJobs = 4
+[pager]
+	;log = diff-highlight | less
+	;show = diff-highlight | less
+	;diff = diff-highlight | less
+[interactive]
+	;difffilter = diff-highlight
