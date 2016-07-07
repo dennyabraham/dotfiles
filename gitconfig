@@ -37,7 +37,7 @@
 [core]
   editor = nvim
   autocrlf = input
-  pager = diff-so-fancy | less --tabs=4 -RFX
+  pager = less --tabs=4 -RFX
   excludesfile = ~/.config/git/gitignore
   attributesfile = ~/.config/git/attributes
   ;hooksPath # sets a hooks path
@@ -61,12 +61,6 @@
   prompt = false
 [submodule]
   fetchJobs = 4
-[pager]
-  log = diff-so-fancy | less
-  show = diff-so-fancy | less
-  diff = diff-so-fancy | less
-[interactive]
-  difffilter = diff-so-fancy
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52
