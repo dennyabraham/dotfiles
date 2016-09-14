@@ -7,7 +7,7 @@ export TMUX_DEFAULT_COMMAND="$SHELL"
 export DISPLAY=:0
 
 # xset r rate (delay in ms) (repeat in hz)
-xset r rate 300 150
+xset r rate 400 100
 
 # make caps ctrl
 setxkbmap -option altwin:swap_alt_win
