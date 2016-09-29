@@ -67,6 +67,7 @@ source $HOME/.config/zsh/vars.sh
 source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/paths.sh
+source $HOME/.config/zsh/pgvm.sh
 source $HOME/.config/zsh/secrets.sh
 source $ZSH/oh-my-zsh.sh
 
