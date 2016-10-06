@@ -25,5 +25,3 @@ set runtimepath^=~/.janus/ag.vim
 
 call janus#disable_plugin('ack')
 call janus#disable_plugin('eunuch')
-
-"let g:vimwiki_list = [{'path': '~/wiki/', 'syntax': 'markdown', 'ext': '.md'}]
