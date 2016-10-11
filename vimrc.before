@@ -25,3 +25,7 @@ set runtimepath^=~/.janus/ag.vim
 
 call janus#disable_plugin('ack')
 call janus#disable_plugin('eunuch')
+call janus#disable_plugin('dwm')
+call janus#disable_plugin('jade')
+call janus#disable_plugin('tabular')
+call janus#disable_plugin('stylus')
