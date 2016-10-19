@@ -1,0 +1,39 @@
+[ui]
+username = Denny Abraham <dennyabraham@users.noreply.github.com>
+editor = nvim
+ignore = ~/.config/hg/ignore
+
+[color]
+bookmarks.current = green
+branches.active = yellow
+branches.closed = red
+branches.current = green
+branches.inactive = none
+diff.changed = yellow
+diff.deleted = red
+diff.diffline = bold
+diff.extended = blue
+diff.file_a = red
+diff.file_b = green
+diff.hunk = cyan
+diff.inserted = green
+diff.trailingwhitespace = bold red_background
+qseries.applied = green
+qseries.missing = red
+qseries.unapplied = yellow
+resolve.resolved = green
+resolve.unresolved = red
+status.added = green
+status.clean = none
+status.copied = none
+status.deleted = yellow
+status.ignored = none
+status.modified = cyan
+status.removed = red
+status.unknown = magenta
+tags.normal = green
+tags.local = yellow
+
+[diff]
+git = True
+unified = 5
