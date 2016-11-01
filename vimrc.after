@@ -1,5 +1,8 @@
 colorscheme molokai
 
+" In case of sun
+"colorscheme solarized
+
 set hidden
 let g:racer_cmd = "~/.cargo/bin/racer"
 let $RUST_SRC_PATH = "~/projects/rust"
