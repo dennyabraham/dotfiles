@@ -20,6 +20,8 @@
 # `git push --delete origin master`
 
 
+# TODO: allow disabling via environment variable
+
 protected_branch='master'
 
 policy="\n\n[Policy] Never push code directly to the "$protected_branch" branch! (Prevented with pre-push hook.)\n\n"
