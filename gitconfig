@@ -22,7 +22,7 @@
   lol = log --graph --pretty=oneline --decorate
   clear-merge = merge --no-ff --log --edit
   amend-content = commit --amend --no-edit
-  wip = commit -nam wip
+  wip = commit -nm "wip [ci skip]"
 [include]
   path = ~/.config/git/config
   path = ~/.config/git/secret-config
