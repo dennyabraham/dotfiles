@@ -31,4 +31,3 @@ call janus#disable_plugin('tabular')
 call janus#disable_plugin('stylus')
 
 setlocal cursorcolumn
-setlocal cursorline
