@@ -1,3 +1,4 @@
 source $BREW_PREFIX/opt/chruby/share/chruby/chruby.sh
 source $BREW_PREFIX/opt/chruby/share/chruby/auto.sh
-chruby ruby-2.3.1
+export DEFAULT_RUBY=ruby-2.4.0
+chruby $DEFAULT_RUBY
