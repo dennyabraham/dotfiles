@@ -1,5 +1,5 @@
 export BREW_PREFIX="$HOME/.linuxbrew"
-export HOST_PROMPT_COLOR="cyan"
+export HOST_PROMPT_COLOR="yellow"
 export LOGIN_COLOR=$(printf "%03d" $(((RANDOM % 230) + 1)))
 export TMUX_DEFAULT_COMMAND="$SHELL"
 
