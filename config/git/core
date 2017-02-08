@@ -23,6 +23,7 @@
   clear-merge = merge --no-ff --log --edit
   amend-content = commit --amend --no-edit
   wip = commit -nam 'wip [ci skip]'
+  blank = commit --allow-empty -nm '[ci skip]'
 [include]
   path = ~/.config/git/arch
   path = ~/.config/git/secret-config
