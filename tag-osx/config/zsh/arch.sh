@@ -5,5 +5,5 @@ export TMUX_DEFAULT_COMMAND="reattach-to-user-namespace -l $SHELL"
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 
 if [ -e "$BREW_PREFIX/bin/docker-machine" ]; then
-  (docker-machine ls | awk '{print $4}' | grep -iq Running) && eval "$(docker-machine env dev)"
+  eval "$(docker-machine env dev)"
 fi
