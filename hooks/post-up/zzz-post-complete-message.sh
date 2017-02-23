@@ -15,5 +15,7 @@ if [ "$DOTFILE_UPDATE" = "force" ]; then
   echo '  bundle config <BUNDLE_HOST> <USERNAME>:<PASSWORD>'
   echo '* add HOMEBREW_GITHUB_API_TOKEN to ~/.config/zsh/secrets.sh'
   echo '  export HOMEBREW_GITHUB_API_TOKEN=0000000000000000000000000000000000000000'
+  echo '* add USE_DOCKER_MACHINE to ~/.config/zsh/secrets.sh'
+  echo '  export USE_DOCKER_MACHINE=true'
   touch $HOME/.config/zsh/secrets.sh
 fi
