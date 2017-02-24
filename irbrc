@@ -1,21 +1,21 @@
-require 'rubygems'
-require 'interactive_editor'
-require 'irb/completion'
-
-begin
-  require 'ap'
+def loud_require(file)
+  require file
 rescue LoadError
-  require 'pp'
+  puts "failed to load #{file}"
 end
 
+loud_require 'rubygems'
+loud_require 'interactive_editor'
+loud_require 'irb/completion'
+loud_require 'ap'
+
 # irb history
-require 'irb/ext/save-history'
+loud_require 'irb/ext/save-history'
 IRB.conf[:SAVE_HISTORY] = 1000
 IRB.conf[:HISTORY_FILE] = File.expand_path("~/.irbhistory")
-IRB.conf[:PROMPT_MODE] = :SIMPLE
 IRB.conf[:AUTO_INDENT] = true
 
-ARGV.concat [ "--readline", "--prompt-mode", "simple" ]
+ARGV.concat ["--readline"]
 
 module Enumerable
   def frequencies
