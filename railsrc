@@ -1,4 +1,0 @@
-projectrc = File.expand_path('config/.projectrc')
-if File.exist?(projectrc)
-  load projectrc
-end
