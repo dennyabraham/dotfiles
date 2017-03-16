@@ -1,4 +1,5 @@
 let mapleader = ","
+let maplocalleader = ";"
 let g:rainbow_active = 1
 let g:paredit_mode = 1
 
