@@ -31,3 +31,5 @@ call janus#disable_plugin('tabular')
 call janus#disable_plugin('stylus')
 
 setlocal cursorline
+
+filetype indent on
