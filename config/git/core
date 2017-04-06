@@ -3,6 +3,10 @@
   branch = auto
   status = auto
   ui = auto
+[color "status"]
+  added = green bold
+  changed = yellow bold
+  untracked = red bold
 [user]
   name = dennyabraham
   email = dennyabraham@users.noreply.github.com
