@@ -102,8 +102,9 @@ module.exports = {
   plugins: [
     "hyper-font-smoothing",
     //"hyper-blink",
-    "hypertheme",
-
+    "hypertheme",,
+    'hyper-solarized-light' ,
+    //'hyperterm-monokai',
   ],
 
   // in development, you can create a directory under
