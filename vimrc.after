@@ -1,7 +1,9 @@
 colorscheme molokai
+set background=dark
 
 " In case of sun
 "colorscheme solarized
+"set background=light
 
 set hidden
 let g:racer_cmd = "~/.cargo/bin/racer"
