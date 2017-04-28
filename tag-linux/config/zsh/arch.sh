@@ -1,5 +1,4 @@
 export BREW_PREFIX="$HOME/.linuxbrew"
-export HOST_PROMPT_COLOR="yellow"
 export TMUX_DEFAULT_COMMAND="$SHELL"
 
 # this might not work outside of a running x instance
