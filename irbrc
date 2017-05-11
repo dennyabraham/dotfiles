@@ -5,9 +5,9 @@ rescue LoadError
 end
 
 loud_require 'rubygems'
-loud_require 'interactive_editor'
 loud_require 'irb/completion'
-loud_require 'ap'
+loud_require 'interactive_editor'
+loud_require 'awesome_print'
 
 # irb history
 loud_require 'irb/ext/save-history'
