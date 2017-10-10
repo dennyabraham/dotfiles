@@ -26,11 +26,31 @@ Pry.config.ls.private_method_color = :bright_black
 # == PLUGINS ===
 # awesome_print gem: great syntax colorized printing
 # look at ~/.aprc for more settings for awesome_print
+
+class PryHelper
+  attr_accessor :broken_pry
+
+  def stagger_output(text, out = nil)
+    return Pry.new.pager.page(text) if broken_pry
+    begin
+      Pry::Helpers::BaseHelpers.stagger_output(text, out)
+    rescue NameError => ne
+      if ne.message =~ /undefined local variable or method `_pry_'/
+        broken_pry = true
+        Pry.new.pager.page(text)
+      else
+        raise ne
+      end
+    end
+  end
+end
+
 begin
   require 'awesome_print'
   # The following line enables awesome_print for all pry output,
   # and it also enables paging
-  Pry.config.print = proc {|output, value| Pry::Helpers::BaseHelpers.stagger_output("=> #{value.ai}", output)}
+  ph = PryHelper.new
+  Pry.config.print = proc {|output, value| ph.stagger_output("=> #{value.ai}", output)}
 
   # If you want awesome_print without automatic pagination, use the line below
   # Pry.config.print = proc { |output, value| output.puts value.ai }
