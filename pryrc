@@ -133,3 +133,11 @@ module CodeRay
     end
   end
 end
+
+module PryUtil
+  class << self
+    def annoyingcase(string)
+      string.each_char.each_slice(2).map { |a, b| a + b.to_s.upcase }.join
+    end
+  end
+end
