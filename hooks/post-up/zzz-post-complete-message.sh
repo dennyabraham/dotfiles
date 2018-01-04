@@ -17,5 +17,7 @@ if [ "$DOTFILE_UPDATE" = "force" ]; then
   echo '  export HOMEBREW_GITHUB_API_TOKEN=0000000000000000000000000000000000000000'
   echo '* add USE_DOCKER_MACHINE to ~/.config/zsh/secrets.sh'
   echo '  export USE_DOCKER_MACHINE=true'
+  echo '* convert .config/library/preferences/com.manytricks.moom.plist to'
+  echo '  binary and put in ~/Library/Preferences'
   touch $HOME/.config/zsh/secrets.sh
 fi
