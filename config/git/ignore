@@ -2,12 +2,7 @@
 .netrwhist
 .nrepl-port
 Thumbs.db
-scratch.clj
-scratch.elm
-scratch.ex
-scratch.rb
-scratch.rs
-scratch.sh
+scratch.*
 
 # Files that might appear on external disks
 .Spotlight-V100
