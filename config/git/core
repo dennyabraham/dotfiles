@@ -14,17 +14,14 @@
   st = status
   ci = commit
   co = checkout
-  select = cherry-pick
   br = branch
   praise = blame
   hide = update-index --assume-unchanged
   unhide = update-index --no-assume-unchanged
   char-diff = diff --word-diff-regex=.
   char-diff-color = diff --word-diff-regex=. --word-diff=color
-  undo = reset --soft HEAD^
   count = shortlog -sn
   lol = log --graph --pretty=oneline --decorate
-  clear-merge = merge --no-ff --log --edit
   amend-content = commit --amend --no-edit
   wip = commit -nam 'wip [ci skip]'
   blank = commit --allow-empty -nm '[ci skip]'
