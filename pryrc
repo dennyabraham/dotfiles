@@ -1,3 +1,9 @@
+def loud_require(file)
+  require file
+rescue LoadError
+  puts "failed to load #{file}"
+end
+
 # taken from skwp/dotfiles
 #
 # === EDITOR ===
@@ -106,45 +112,4 @@ class Hash
   def self.toy(n=10)
     Hash[Array.toy(n).zip(Array.toy(n){|c| (96+(c+1)).chr})]
   end
-end
-
-# === COLOR CUSTOMIZATION ===
-# Everything below this line is for customizing colors, you have to use the ugly
-# color codes, but such is life.
-CodeRay.scan("example", :ruby).term # just to load necessary files
-# Token colors pulled from: https://github.com/rubychan/coderay/blob/master/lib/coderay/encoders/terminal.rb
-
-$LOAD_PATH << File.dirname(File.realpath(__FILE__))
-
-# In CodeRay >= 1.1.0 token colors are defined as pre-escaped ANSI codes
-if Gem::Version.new(CodeRay::VERSION) >= Gem::Version.new('1.1.0')
-  require "escaped_colors"
-else
-  require "unescaped_colors"
-end
-
-module CodeRay
-  module Encoders
-    class Terminal < Encoder
-      # override old colors
-      TERM_TOKEN_COLORS.each_pair do |key, value|
-        TOKEN_COLORS[key] = value
-      end
-    end
-  end
-end
-
-module PryUtil
-  class << self
-    def annoyingcase(string)
-      string.each_char.each_slice(2).map { |a, b| a + b.to_s.upcase }.join
-    end
-  end
-end
-
-if defined?(PryByebug)
-  Pry.commands.alias_command 'c', 'continue'
-  Pry.commands.alias_command 's', 'step'
-  Pry.commands.alias_command 'n', 'next'
-  Pry.commands.alias_command 'f', 'finish'
 end
