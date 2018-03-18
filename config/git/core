@@ -72,3 +72,5 @@
   lineNumber = true
 [diff "nodiff"]
 	command = /usr/bin/true
+[gpg]
+	program = gpg
