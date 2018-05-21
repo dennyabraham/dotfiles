@@ -47,6 +47,8 @@
   templatedir = ~/.config/git/template
 [rebase]
   autostash = true
+[branch]
+  autosetuprebase = always
 [homebrew]
   analyticsdisabled = true
 [diff]
