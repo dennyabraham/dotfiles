@@ -3,6 +3,7 @@
 .nrepl-port
 Thumbs.db
 scratch.*
+monday.sh
 
 # Files that might appear on external disks
 .Spotlight-V100
