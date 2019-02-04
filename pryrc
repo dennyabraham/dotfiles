@@ -57,7 +57,7 @@ begin
   # The following line enables awesome_print for all pry output,
   # and it also enables paging
   ph = PryHelper.new
-  Pry.config.print = proc {|output, value| ph.stagger_output("=> #{value.ai}", output)}
+  Pry.config.print = proc {|output, value| ph.stagger_output("=> #{value.ai}\n", output)}
 
   # If you want awesome_print without automatic pagination, use the line below
   # Pry.config.print = proc { |output, value| output.puts value.ai }
