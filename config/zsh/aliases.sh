@@ -4,4 +4,4 @@ alias journal='vim + "~/projects/journal/$(date +%Y)/$(date +%F).md"'
 alias nvimdiff="nvim -d"
 alias nvimlarge="nvim -u NONE"
 alias rg="rg --smart-case"
-alias weather="curl -s http://wttr.in/60612?lang=en'"
+alias weather="curl -s http://wttr.in/60612?lang=en"
