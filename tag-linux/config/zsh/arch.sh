@@ -1,4 +1,4 @@
-export BREW_PREFIX="$HOME/.linuxbrew"
+export BREW_PREFIX="/home/linuxbrew/.linuxbrew"
 export TMUX_DEFAULT_COMMAND="$SHELL"
 
 # this might not work outside of a running x instance
