@@ -15,7 +15,7 @@ StartFullscreen = false
 # For example, linespace affects the margins of the external completion popup menu UI.
 # Font settings in nvim are set with well-known options, such as `:set guifont = hoge:h10`, `:set linespace=4`.
 FontFamily = "Droid Sans Mono for Powerline"
-FontSize = 11
+FontSize = 12
 Linespace = 0
 
 # Neovim external UI features
