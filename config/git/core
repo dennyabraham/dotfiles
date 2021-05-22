@@ -78,3 +78,5 @@
 	command = /usr/bin/true
 [gpg]
 	program = gpg
+[init]
+	defaultBranch = canon
