@@ -1,3 +1,8 @@
+# shell:
+#   program: /usr/local/bin/kak
+#   args:
+#     - "~/Dropbox/personal-wiki/docs/notes/professional/rentgrata/overall-checklist.md"
+
 font:
   size: 13
   normal:
