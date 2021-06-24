@@ -27,6 +27,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby 2.3.1
+source $BREW_PREFIX/opt/chruby/share/chruby/chruby.sh
+source $BREW_PREFIX/opt/chruby/share/chruby/auto.sh
+export DEFAULT_RUBY=$(cat ~/.ruby-version)
+chruby $DEFAULT_RUBY
