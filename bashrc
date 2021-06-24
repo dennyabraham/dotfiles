@@ -27,6 +27,7 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+source $HOME/.config/zsh/arch.sh # HACK cuz i don't want to do it twice
 source $BREW_PREFIX/opt/chruby/share/chruby/chruby.sh
 source $BREW_PREFIX/opt/chruby/share/chruby/auto.sh
 export DEFAULT_RUBY=$(cat ~/.ruby-version)
