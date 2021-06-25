@@ -12,7 +12,7 @@ alias json_curl="curl -H 'Content-type: application/json' -H 'Accept: applicatio
 noindexusb () { cd $1 ; rm -r .Trashes .Spotlight-V100; mkdir -p .fseventsd/; touch .fseventsd/no_log .metadata_never_index .Trashes; cd -; }
 
 # ignore case in commands
-bind 'set completion-ignore-case on'
+# bind 'set completion-ignore-case on' # i don't know why this won't work but i dont use bash so w/e
 
 # history configuration
 export HISTCONTROL=ignoredups
