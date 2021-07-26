@@ -60,9 +60,9 @@ source $ZSH/oh-my-zsh.sh
 
 # FIXME - use chpwd to check for a nvmrc file, then activate if nvm isn't
 # already active.  alternately, use a node version manager that's faster
-if [ -e "$PWD/.nvmrc" ]; then
+# if [ -e "$PWD/.nvmrc" ]; then
   source $HOME/.config/zsh/nvm.sh
-fi
+# fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
