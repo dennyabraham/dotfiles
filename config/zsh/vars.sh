@@ -4,3 +4,6 @@ export ZSH_CUSTOM=$HOME/.config/zsh
 
 # need this for gpg sometimes
 export GPG_TTY=$(tty)
+
+# needed to disable husky hooks
+export HUSKY=0
