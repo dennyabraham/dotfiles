@@ -46,7 +46,7 @@
   attributesfile = ~/.config/git/attributes
   ;hooksPath # sets a hooks path
 [init]
-  templatedir = ~/.config/git/template
+  # templatedir = ~/.config/git/template
 [rebase]
   autostash = true
 [branch]
