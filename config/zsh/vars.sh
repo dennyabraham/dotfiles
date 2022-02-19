@@ -9,5 +9,5 @@ export GPG_TTY=$(tty)
 export HUSKY=0
 
 # history size
-export SAVEHIST=10000
+export SAVEHIST=100000
 export HISTSIZE=$SAVEHIST
