@@ -49,7 +49,7 @@ plugins=(z)
 #
 source $HOME/.config/zsh/arch.sh
 
-source $HOME/.config/zsh/vars.sh
+source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
 source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/nvm.sh
 source $HOME/.config/zsh/aliases.sh
@@ -84,3 +84,4 @@ setopt hist_ignore_all_dups  # don't record dupes in history
 setopt hist_reduce_blanks
 
 set -o emacs
+source $HOME/.config/zsh/vars.sh # repeated here for hist size
