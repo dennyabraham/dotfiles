@@ -45,10 +45,6 @@ plugins=(z)
 
 # User configuration
 
-# sets the per-arch $BREW_PREFIX so must come first
-#
-source $HOME/.config/zsh/arch.sh
-
 source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
 source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/nvm.sh
