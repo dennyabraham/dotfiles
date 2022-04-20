@@ -47,7 +47,7 @@ plugins=(z)
 
 source $HOME/.config/zsh/brew.sh
 source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
-source $HOME/.config/zsh/chruby.sh
+source $HOME/.config/zsh/asdf.sh
 source $HOME/.config/zsh/nvm.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/paths.sh
