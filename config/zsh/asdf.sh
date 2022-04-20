@@ -1,1 +1,1 @@
-source $BREW_PREFIX/libexec/asdf.sh
+source $(brew --prefix asdf)/libexec/asdf.sh
