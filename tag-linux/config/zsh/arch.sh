@@ -1,1 +1,0 @@
-export TMUX_DEFAULT_COMMAND="$SHELL"
