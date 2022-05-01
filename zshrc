@@ -45,6 +45,8 @@ plugins=(z)
 
 # User configuration
 
+source $HOME/.config/zsh/arch.sh
+source $HOME/.config/zsh/local.sh
 source $HOME/.config/zsh/brew.sh
 source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
 source $HOME/.config/zsh/asdf.sh
