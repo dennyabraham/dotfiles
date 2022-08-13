@@ -24,5 +24,6 @@ if filenames.size != moves.map(&:first).uniq.count ||
 end
 
 moves.each do |source, destination|
+  next if source == destination
   FileUtils.mv(source, destination, noop: false, verbose: true)
 end
