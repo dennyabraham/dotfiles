@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ruby-install -L > /dev/null
+ruby-install -U > /dev/null
