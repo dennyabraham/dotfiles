@@ -54,6 +54,7 @@
 [homebrew]
   analyticsdisabled = true
 [diff]
+  colorMoved = zebra
   tool = nvimdiff
   ;compactionHeuristic # enables breaking diffs optimistically at whitespace boundaries
 [diff "clojure"]
