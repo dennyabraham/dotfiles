@@ -28,6 +28,8 @@
 [include]
   path = ~/.config/git/arch
   path = ~/.config/git/secret-config
+  # experimental
+  path = ~/.config/git/delta
 [fetch]
   prune = true
 [push]
@@ -41,7 +43,6 @@
 [core]
   editor = nvim
   autocrlf = input
-  pager = less --tabs=4 -RFX
   excludesfile = ~/.config/git/ignore
   attributesfile = ~/.config/git/attributes
   ;hooksPath # sets a hooks path
@@ -53,14 +54,8 @@
   autosetuprebase = always
 [homebrew]
   analyticsdisabled = true
-[diff]
-  colorMoved = zebra
-  tool = nvimdiff
-  ;compactionHeuristic # enables breaking diffs optimistically at whitespace boundaries
 [diff "clojure"]
   xfuncname = (^\\(.*|\\s*\\(defn.*)
-[merge]
-  tool = nvimdiff
 [difftool "nvimdiff"]
   cmd = "nvim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
   prompt = true
