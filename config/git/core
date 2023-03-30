@@ -28,8 +28,7 @@
 [include]
   path = ~/.config/git/arch
   path = ~/.config/git/secret-config
-  # experimental
-  path = ~/.config/git/delta
+  path = ~/.config/git/delta # experimental
 [fetch]
   prune = true
 [push]
@@ -56,11 +55,6 @@
   analyticsdisabled = true
 [diff "clojure"]
   xfuncname = (^\\(.*|\\s*\\(defn.*)
-[difftool "nvimdiff"]
-  cmd = "nvim -d -u ~/.vimrc \"$LOCAL\" \"$REMOTE\""
-  prompt = true
-[difftool]
-  prompt = false
 [submodule]
   fetchJobs = 4
 [color "diff-highlight"]
