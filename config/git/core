@@ -25,10 +25,6 @@
   amend-content = commit --amend --no-edit
   wip = commit -nam 'wip [ci skip]'
   blank = commit --allow-empty -nm '[ci skip]'
-[include]
-  path = ~/.config/git/arch
-  path = ~/.config/git/secret-config
-  path = ~/.config/git/delta # experimental
 [fetch]
   prune = true
 [push]
@@ -70,3 +66,7 @@
 	program = gpg
 [init]
 	defaultBranch = canon
+[include]
+  path = ~/.config/git/arch
+  path = ~/.config/git/secret-config
+  path = ~/.config/git/delta # experimental
