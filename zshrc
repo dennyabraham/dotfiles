@@ -46,7 +46,6 @@ plugins=(z)
 # User configuration
 
 source $HOME/.config/zsh/arch.sh
-source $HOME/.config/zsh/local.sh
 source $HOME/.config/zsh/brew.sh
 source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
 source $HOME/.config/zsh/chruby.sh
@@ -57,6 +56,7 @@ source $HOME/.config/zsh/secrets.sh
 source $HOME/.config/zsh/machine.sh
 source $HOME/.config/zsh/hostclass.sh
 source $ZSH/oh-my-zsh.sh
+source $HOME/.config/zsh/local.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
