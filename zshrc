@@ -52,6 +52,7 @@ source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/asdf.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/paths.sh
+source $HOME/.config/zsh/atuin.sh
 source $HOME/.config/zsh/secrets.sh
 source $HOME/.config/zsh/machine.sh
 source $HOME/.config/zsh/hostclass.sh
