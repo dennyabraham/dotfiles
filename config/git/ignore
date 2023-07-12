@@ -10,3 +10,5 @@ scratch.*
 
 tags
 worktrees
+.idea
+.vim
