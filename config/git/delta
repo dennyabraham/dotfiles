@@ -27,3 +27,4 @@
 #   colorMoved = zebra
 #   tool = nvimdiff
 #   ;compactionHeuristic # enables breaking diffs optimistically at whitespace boundaries
+  algorithm = histogram
