@@ -27,12 +27,17 @@
   blank = commit --allow-empty -nm '[ci skip]'
 [fetch]
   prune = true
+  fsckobjects = true
+[transfer]
+  fsckobjects = true
+[receive]
+  fsckObjects = true
 [push]
   default = upstream
 [pull]
   rebase = true
 [rerere]
-  enabled = 1
+  enabled = true
 [commit]
   template = ~/.config/git/message-template
 [core]
@@ -45,12 +50,11 @@
   # templatedir = ~/.config/git/template
 [rebase]
   autostash = true
+  autosquash = true
 [branch]
   autosetuprebase = always
 [homebrew]
   analyticsdisabled = true
-[diff "clojure"]
-  xfuncname = (^\\(.*|\\s*\\(defn.*)
 [submodule]
   fetchJobs = 4
 [color "diff-highlight"]
@@ -70,3 +74,5 @@
   path = ~/.config/git/arch
   path = ~/.config/git/secret-config
   path = ~/.config/git/delta # experimental
+[log]
+  date = iso
