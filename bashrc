@@ -12,3 +12,4 @@
 # fi
 #
 # source $HOME/.config/zsh/arch.sh # HACK cuz i don't want to do it twice
+source "$HOME/.cargo/env"
