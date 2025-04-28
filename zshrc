@@ -59,6 +59,7 @@ source $HOME/.config/zsh/machine.sh
 source $HOME/.config/zsh/hostclass.sh
 source $ZSH/oh-my-zsh.sh
 source $HOME/.config/zsh/sdkman.sh
+source $HOME/.config/zsh/uv.sh
 source $HOME/.config/zsh/local.sh
 
 # You may need to manually set your language environment
