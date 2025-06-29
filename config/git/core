@@ -38,6 +38,7 @@
   rebase = true
 [rerere]
   enabled = true
+  autoupdate = true
 [commit]
   template = ~/.config/git/message-template
 [core]
