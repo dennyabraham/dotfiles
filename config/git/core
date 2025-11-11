@@ -25,6 +25,7 @@
   amend-content = commit --amend --no-edit
   wip = commit -nam 'wip [ci skip]'
   blank = commit --allow-empty -nm '[ci skip]'
+  addnw = !sh -c 'git diff -U0 -w --no-color --src-prefix=a/ --dst-prefix=b/ "$@" | git apply --cached --ignore-whitespace --unidiff-zero -'
 [fetch]
   prune = true
   fsckobjects = true
