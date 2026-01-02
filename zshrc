@@ -51,8 +51,8 @@ source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
 source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/paths.sh
-# source $HOME/.config/zsh/asdf.sh # must be after paths
-source $HOME/.config/zsh/mise.sh # must be after paths
+source $HOME/.config/zsh/asdf.sh # must be after paths
+# source $HOME/.config/zsh/mise.sh
 source $HOME/.config/zsh/rustup.sh
 source $HOME/.config/zsh/secrets.sh
 source $HOME/.config/zsh/machine.sh
