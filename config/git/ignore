@@ -12,3 +12,5 @@ tags
 worktrees
 .idea
 .vim
+
+**/.claude/settings.local.json
