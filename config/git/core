@@ -76,6 +76,7 @@
 [include]
   path = ~/.config/git/arch
   path = ~/.config/git/secret-config
-  path = ~/.config/git/delta # experimental
+  path = ~/.config/git/delta
+  path = ~/.config/git/difftastic # experimental
 [log]
   date = iso
