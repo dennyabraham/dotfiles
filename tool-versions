@@ -1,3 +1,6 @@
-java adoptopenjdk-11.0.27+6
-nodejs 24.1.0
+java temurin-25.0.5+8.0.LTS
+nodejs 26.13.0
+erlang 29.1.2
+elixir 1.20.5-otp-29
 python 3.10.16
+rebar 3.28.0
