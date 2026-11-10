@@ -7,8 +7,8 @@
 # # prompt configuration, including git branch name
 # GIT_PS1_SHOWDIRTYSTATE=true
 # export PS1='\u@\h: \W$(__git_ps1) \$ '
-# if [ -f `$BREW_PREFIX`/etc/bash_completion ]; then
-#   . `$BREW_PREFIX`/etc/bash_completion
+# if [ -f "$HOMEBREW_PREFIX"/etc/bash_completion ]; then
+#   . "$HOMEBREW_PREFIX"/etc/bash_completion
 # fi
 #
 # source $HOME/.config/zsh/arch.sh # HACK cuz i don't want to do it twice

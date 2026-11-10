@@ -9,7 +9,7 @@ function prompt_char {
 
 PROMPT='%(?, ,%{$fg[red]%}%{$reset_color%})
 %{$FG[$MACHINE_COLOR]%}%n%{$reset_color%}@%{$FG[$HOST_PROMPT_COLOR]%}[%m]%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}$(git_prompt_info)
-%_$(prompt_char) '
+$(prompt_char) '
 
 local return_code="%(?..%{$fg_bold[red]%}%? ↵%{$reset_color%})"
 RPS1="${return_code}"

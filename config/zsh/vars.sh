@@ -1,4 +1,4 @@
-export EDITOR=$BREW_PREFIX/bin/nvim
+export EDITOR=$HOMEBREW_PREFIX/bin/nvim
 export VISUAL=$EDITOR
 export ZSH_CUSTOM=$HOME/.config/zsh
 

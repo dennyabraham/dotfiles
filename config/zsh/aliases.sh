@@ -1,5 +1,5 @@
 alias be="bundle exec"
-alias scpresume='$(brew --prefix)/bin/rsync -Pazhv -e ssh'
+alias scpresume='$HOMEBREW_PREFIX/bin/rsync -Pazhv -e ssh'
 alias journal='vim + "~/projects/journal/$(date +%Y)/$(date +%F).md"'
 alias nvimdiff="nvim -d -c 'set diffopt+=iwhite'"
 alias nvimlarge="nvim -u NONE"

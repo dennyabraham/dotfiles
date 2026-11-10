@@ -9,4 +9,4 @@ else
   export BREW_LOCATION="/opt/homebrew/bin/brew"
 fi
 eval $($BREW_LOCATION shellenv)
-export BREW_PREFIX=$(brew --prefix)
+[[ -n $HOMEBREW_PREFIX ]] || echo "brew.sh: HOMEBREW_PREFIX is not set after brew shellenv ($BREW_LOCATION)" >&2
