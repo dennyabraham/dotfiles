@@ -1,2 +1,2 @@
-EXCLUDES="README.md LICENSE .gitignore"
-DOTFILES_DIRS="$HOME/dotfiles $$HOME/dotfiles-local HOME/.dotfiles"
+EXCLUDES="README.md LICENSE .gitignore zsh_history.old"
+DOTFILES_DIRS="$HOME/dotfiles $HOME/dotfiles-local $HOME/.dotfiles"

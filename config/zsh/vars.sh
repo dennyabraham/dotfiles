@@ -8,6 +8,3 @@ export GPG_TTY=$(tty)
 # needed to disable husky hooks
 export HUSKY=0
 
-# history size
-export HISTSIZE=100000
-export SAVEHIST=$HISTSIZE

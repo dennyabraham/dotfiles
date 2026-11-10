@@ -47,12 +47,11 @@ plugins=(z)
 
 source $HOME/.config/zsh/arch.sh
 source $HOME/.config/zsh/brew.sh
-source $HOME/.config/zsh/vars.sh # repeated at the end for hist size
+source $HOME/.config/zsh/vars.sh
 source $HOME/.config/zsh/chruby.sh
 source $HOME/.config/zsh/aliases.sh
 source $HOME/.config/zsh/paths.sh
 source $HOME/.config/zsh/asdf.sh # must be after paths
-# source $HOME/.config/zsh/mise.sh
 source $HOME/.config/zsh/rustup.sh
 source $HOME/.config/zsh/secrets.sh
 source $HOME/.config/zsh/machine.sh
@@ -74,11 +73,12 @@ source $HOME/.config/zsh/local.sh
 # For a full list of active aliases, run `alias`.
 #
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-
 setopt complete_in_word
 setopt hist_ignore_all_dups  # don't record dupes in history
 setopt hist_reduce_blanks
 
 set -o emacs
-source $HOME/.config/zsh/vars.sh # repeated here for hist size
+
+# history size; set after oh-my-zsh, whose lib/history.zsh raises HISTSIZE/SAVEHIST to its minimums
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
