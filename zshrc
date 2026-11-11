@@ -76,6 +76,8 @@ source $HOME/.config/zsh/local.sh
 setopt complete_in_word
 setopt hist_ignore_all_dups  # don't record dupes in history
 setopt hist_reduce_blanks
+unsetopt share_history       # oh-my-zsh enables it; keep each window's up-arrow history separate
+setopt inc_append_history    # still write each command to $HISTFILE immediately
 
 set -o emacs
 
